@@ -2,7 +2,7 @@
 
 # variables
 
-nombre_jugador = input("Ingrese su nombre: ")
+nombre = input("Ingrese su nombre: ")
 dinero = 100
 dignidad = 50
 hambre = 0
@@ -27,3 +27,13 @@ elif opcion ==3:
     print("Usted esta ahorrando")
 else:
     print("Opcion invalida")
+
+def gastar(dinero, dignidad):
+    pass
+
+def trabajar(dinero, hambre):
+    pass
+
+while dinero <= 0:
+    print("Sigues viviendo en casa")
+    dinero -= 10
