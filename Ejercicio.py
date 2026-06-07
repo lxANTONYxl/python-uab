@@ -37,3 +37,11 @@ def trabajar(dinero, hambre):
 while dinero <= 0:
     print("Sigues viviendo en casa")
     dinero -= 10
+
+class HijoProdigo:
+   def __init__(self, nombre,  dignidad, hambre, arrepentimiento):
+       self.nombre = nombre
+       self.dinero = 100
+       self.dignidad =50
+       self.hambre = 0
+       self.arrepentimiento = 0
