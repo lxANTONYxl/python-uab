@@ -22,7 +22,9 @@ class HijoProdigo:
         print(f"Estado:\n Dinero = {dinero}")
 
     def ahorrar(self, dinero):
-        pass
+        print("Usted esta ahorrando :)")
+        print(f"Estado:\n Dinero = {dinero}")
+
     def trabajar(self):
         pass
     def reflexionar(self, arrepentimiento, hambre):
