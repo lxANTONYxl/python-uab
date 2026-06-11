@@ -16,9 +16,12 @@ class HijoProdigo:
             hambre += 50
             print(f"Estado: \nDinero = {dinero}\nDignidad = {dignidad}\nHambre = {hambre}")
 
-    def invertir(self):
-        pass
-    def ahorrar(self):
+    def invertir(self, dinero):
+        print("Usted esta invirtiendo")
+        dinero += 20
+        print(f"Estado:\n Dinero = {dinero}")
+
+    def ahorrar(self, dinero):
         pass
     def trabajar(self):
         pass
