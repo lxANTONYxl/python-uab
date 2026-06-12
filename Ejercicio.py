@@ -6,6 +6,9 @@ class HijoProdigo:
         self.dignidad = dignidad
         self.hambre = hambre
         self.arrpentimiento = arrepentimiento
+        print(f"\nBienvenido {nombre}")
+        print(f"Felicidades, recibiste tu herrencia de {dinero}")
+        print("Que quieres hacer?")
 
     def gastar_todo(self, dinero, dignidad, hambre):
         # el problema no da indicaciones exactas de como realizar, asi que lo hare como se pueda
@@ -33,6 +36,9 @@ class HijoProdigo:
     def reflexionar(self, arrepentimiento, hambre):
         if hambre > 40:
             arrepentimiento+=10
+
+    def estado_jugador(self):
+        pass# quiero colocar un metodo estado el cual el jugador puede consultar
 
 
 print("Bienvenido al juego del hijo prodigo")
