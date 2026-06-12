@@ -34,4 +34,6 @@ class HijoProdigo:
 
 print("Bienvenido al juego del hijo prodigo")
 jugador = HijoProdigo(input("Ingrese su nombre: "))
-jugador.gastar_todo(jugador.dinero,jugador.dignidad,jugador.hambre)
+
+while jugador.dinero <= 0:
+    pass
