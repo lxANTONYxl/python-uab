@@ -25,8 +25,11 @@ class HijoProdigo:
         print("Usted esta ahorrando :)")
         print(f"Estado:\n Dinero = {dinero}")
 
-    def trabajar(self):
-        pass
+    def trabajar(self, dinero):
+        print("Usted esta trabajando.")
+        dinero += 40
+        print(f"Estado:\n Dinero = {dinero}")
+
     def reflexionar(self, arrepentimiento, hambre):
         if hambre > 40:
             arrepentimiento+=10
