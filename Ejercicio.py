@@ -12,6 +12,11 @@ class HijoProdigo:
 
     def gastar_todo(self, dinero, dignidad, hambre):
         # el problema no da indicaciones exactas de como realizar, asi que lo hare como se pueda
+        print("Te iras de casa y dejaras a tu padre y hermano")
+        print("\nEstas seguro de hacer esto?")
+        decicion = int(input("1: SI\n2: NO\n:"))
+        if decicion == 1:
+            print("Te fuiste de casa")
         if dinero > 0:
             print("Estas de fiesta y gastando tu dinero")
             dinero -= 20 #Cada fiesta reducira 20 monedas
