@@ -24,7 +24,7 @@ class HijoProdigo:
                 hambre += 50
                 print(f"Estado: \nDinero = {dinero}\nDignidad = {dignidad}\nHambre = {hambre}")
         elif decicion == 2:
-            return
+            return decicion
         else:
             print("Opcion incorrecta")
 
@@ -62,8 +62,17 @@ while jugador.dinero >= 0:
         print("2: Invertir una parte")
         print("3: Ahorrar")
         print("4: Trabajar")
-        #intentos += 1
+
         opcion = int(input("\n Opcion: "))
         if opcion == 1:
             jugador.gastar_todo(jugador.dinero, jugador.dignidad, jugador.hambre)
+            #intentos += 1
+        elif opcion == 2:
+            pass
+        elif opcion == 3:
+            pass
+        elif opcion == 4:
+            pass
+        else:
+            pass
 
