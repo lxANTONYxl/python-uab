@@ -10,19 +10,19 @@ class HijoProdigo:
         print(f"Felicidades, recibiste tu herrencia de {dinero}")
 
 
-    def gastar_todo(self, dinero, dignidad, hambre):
+    def gastar_todo(self):
         # el problema no da indicaciones exactas de como realizar, asi que lo hare como se pueda
         print("Te iras de casa y dejaras a tu padre y hermano")
         print("\nEstas seguro de hacer esto?")
         decicion = int(input("1: SI\n2: NO\n:"))
         if decicion == 1:
             print("Te fuiste de casa")
-            if dinero > 0:
+            if self.dinero > 0:
                 print("Estas de fiesta y gastando tu dinero")
-                dinero -= 20 #Cada fiesta reducira 20 monedas
-                dignidad -= 20
-                hambre += 50
-                print(f"Estado: \nDinero = {dinero}\nDignidad = {dignidad}\nHambre = {hambre}")
+                self.dinero -= 20 #Cada fiesta reducira 20 monedas
+                self.dignidad -= 20
+                self.hambre += 50
+                print(f"Estado: \nDinero = {self.dinero}\nDignidad = {self.dignidad}\nHambre = {self.hambre}")
         elif decicion == 2:
             return decicion
         else:
@@ -52,9 +52,12 @@ class HijoProdigo:
 
 print("Bienvenido al juego del hijo prodigo")
 jugador = HijoProdigo(input("Ingrese su nombre: "))
+dinero = jugador.dinero
+dignidad = jugador.dignidad
+hambre = jugador.hambre
 intentos = 0
 opcion = 0
-while jugador.dinero >= 0:
+while dinero >= 0:
 
     if intentos == 0:
         print("Que quieres hacer?\n")
@@ -65,7 +68,7 @@ while jugador.dinero >= 0:
 
         opcion = int(input("\n Opcion: "))
         if opcion == 1:
-            jugador.gastar_todo(jugador.dinero, jugador.dignidad, jugador.hambre)
+            jugador.gastar_todo()
             #intentos += 1
         elif opcion == 2:
             pass
