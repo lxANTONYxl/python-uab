@@ -57,7 +57,7 @@ dignidad = jugador.dignidad
 hambre = jugador.hambre
 intentos = 0
 opcion = 0
-while dinero >= 0:
+while jugador.dinero > 0:
 
     if intentos == 0:
         print("Que quieres hacer?\n")
@@ -70,12 +70,13 @@ while dinero >= 0:
         if opcion == 1:
             jugador.gastar_todo()
             #intentos += 1
+            print(jugador.dinero)
         elif opcion == 2:
-            pass
+            jugador.invertir()
         elif opcion == 3:
-            pass
+            jugador.ahorrar()
         elif opcion == 4:
-            pass
+            jugador.trabajar()
         else:
-            pass
+            print("Opcion incorrecta")
 
