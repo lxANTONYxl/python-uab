@@ -5,7 +5,7 @@ class HijoProdigo:
         self.dinero = dinero
         self.dignidad = dignidad
         self.hambre = hambre
-        self.arrpentimiento = arrepentimiento
+        self.arrepentimiento = arrepentimiento
         print(f"\nBienvenido {nombre}")
         print(f"Felicidades, recibiste tu herrencia de {dinero}")
 
@@ -28,23 +28,23 @@ class HijoProdigo:
         else:
             print("Opcion incorrecta")
 
-    def invertir(self, dinero):
+    def invertir(self):
         print("Usted esta invirtiendo")
-        dinero += 20
-        print(f"Estado:\n Dinero = {dinero}")
+        self.dinero += 20
+        print(f"Estado:\n Dinero = {self.dinero}")
 
-    def ahorrar(self, dinero):
+    def ahorrar(self):
         print("Usted esta ahorrando :)")
-        print(f"Estado:\n Dinero = {dinero}")
+        print(f"Estado:\n Dinero = {self.dinero}")
 
-    def trabajar(self, dinero):
+    def trabajar(self):
         print("Usted esta trabajando.")
-        dinero += 40
-        print(f"Estado:\n Dinero = {dinero}")
+        self.dinero += 40
+        print(f"Estado:\n Dinero = {self.dinero}")
 
-    def reflexionar(self, arrepentimiento, hambre):
-        if hambre > 40:
-            arrepentimiento+=10
+    def reflexionar(self):
+        if self.hambre > 40:
+            self.arrepentimiento +=10
 
     def estado_jugador(self):
         pass# quiero colocar un metodo estado el cual el jugador puede consultar
